@@ -7,7 +7,7 @@ def has_no_e(word):
             return False
     return True     # This causes only the words without an e to appear
 
-count = 0       # No loop
+count = 0      # It starts at 0 and it will soon contain the total # of eligible words
 for line in fin:
     word = line.strip() #Strip gets rid of the whitespace
     if has_no_e(word):
